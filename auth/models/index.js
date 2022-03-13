@@ -10,7 +10,7 @@ const clothes = require('./clothes')
 
 
 
-const myPOSTGRES_URL = process.env.NODE_ENV === 'test' ? 'sqlite:memory:' : process.env.DATABASE_URL ;
+const DATABASE_URL = process.env.NODE_ENV === 'test' ? 'sqlite:memory:' : process.env.DATABASE_URL ;
 
 let sequelizeOptions = process.env.NODE_ENV === 'production' ? {
     dialectOptions: {
@@ -21,7 +21,7 @@ let sequelizeOptions = process.env.NODE_ENV === 'production' ? {
     }
   }:{};
 
-  let sequelize = new Sequelize(myPOSTGRES_URL, sequelizeOptions);
+  let sequelize = new Sequelize(DATABASE_URL, sequelizeOptions);
 
   
 
