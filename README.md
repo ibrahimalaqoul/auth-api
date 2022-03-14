@@ -20,6 +20,6 @@ in sign in i had a middleware called (basicAuth) which takes the req,res,next, t
 created class collection and v1 and v2 routes with adding new models.
 
 # Link 
-* [pull request link](https://class-08-prod.herokuapp.com/)
+* [pull request link](https://github.com/ibrahimalaqoul/auth-api/pull/5)
 * [actions link](https://github.com/ibrahimalaqoul/auth-api/actions)
 * [heroku link](https://class-08-prod.herokuapp.com/)
